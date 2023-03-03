@@ -25,9 +25,9 @@ Scriptable App
 
 ### Notion API Token and Page ID
 
-Token "secret_YiwJxU7kozFtA8dLxFeQidl8tmcDxmnzPB1M8qh8gf9";
-Reminder ID "4880702139ad4b40a009c62cfa3d5bd7";
-Project Overview ID "ef54fb2d0bca45d9b433fbff51513e78";
+Token "secret_XXX";
+Reminder DB ID "XXX";
+Project DB ID "XXX";
 
 ### iCloud Reminder Structure
 
@@ -75,9 +75,9 @@ Scriptable App
 
 ### Notion API Token 与 页面ID
 
-Token "secret_YiwJxU7kozFtA8dLxFeQidl8tmcDxmnzPB1M8qh8gf9";
-提醒事项ID "4880702139ad4b40a009c62cfa3d5bd7";
-项目总览ID "ef54fb2d0bca45d9b433fbff51513e78";
+Token "secret_XXX";
+提醒事项ID "XXX";
+项目总览ID "XXX";
 
 ### iCloud Reminder 结构
 
