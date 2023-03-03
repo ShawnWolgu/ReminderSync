@@ -3,9 +3,9 @@
 // icon-color: blue; icon-glyph: list;
 // Print reminders that are due for today to a file.
 
-const key = "secret_YiwJxU7kozFtA8dLxFeQidl8tmcDxmnzPB1M8qh8gf9";
-const tasks_id = "4880702139ad4b40a009c62cfa3d5bd7";
-const proj_id = "ef54fb2d0bca45d9b433fbff51513e78";
+const key = "secret_";
+const tasks_id = "";
+const proj_id = "";
 const json_template = {"Tomatos":{"id":"vIaw","type":"number","number":0},"Name":{"id":"title","type":"title","title":[{"annotations":{"code":false,"bold":false,"underline":false,"italic":false,"strikethrough":false,"color":"default"},"plain_text":" ","type":"text","href":null,"text":{"content":" ","link":null}}]},"Date":{"id":"%60D%3E%7B","type":"date","date":{"start":null,"end":null,"time_zone":null}},"Project":{"has_more":false,"id":"u%3D_%3D","relation":[],"type":"relation"},"Finish":{"id":"%40m%3Db","type":"checkbox","checkbox":true}};
 
 class task{
