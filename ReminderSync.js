@@ -67,6 +67,7 @@ class task{
 	this.json["Date"]["date"]["start"] = this.date;
 	this.json["Date"]["date"]["end"] = this.date_end;
     }
+    else this.json["Date"] = {"id":"%60D%3E%7B","type":"date","date":null};
     this.json["Finish"]["checkbox"] = this.finish;
   }
 
@@ -125,7 +126,7 @@ class task{
     let newReminder = new Reminder();
     newReminder.title = this.name
     newReminder.calendar = parentCalendar;
-    newReminder.dueDate = dateIcloud.date(this.date+" 21:00");
+    newReminder.dueDate = dateIcloud.date(this.date+" 10:00");
     newReminder.notes = tomatoStr(this.tomatos);
     newReminder.isCompleted = this.finish;
     newReminder.save();
@@ -142,7 +143,7 @@ class task{
       ++iter;
       if (iReminder.title == this.name){
 	if (this.date == null) iReminder.dueDate == null;
-        else iReminder.dueDate = dateIcloud.date(this.date + " 21:00");
+        else iReminder.dueDate = dateIcloud.date(this.date + " 10:00");
         iReminder.notes = tomatoStr(this.tomatos);
         iReminder.isCompleted = this.finish;
         iReminder.save()
@@ -163,13 +164,13 @@ class task{
     if(this.name != secTask.name) return false;
     if(this.project == secTask.project) return true;
     if((this.notion == true)&&(this.project == null)){
-      if (isProject(secTask.project,['Inbox', '@Context'])) return true;
-      else return false;
+      if (isProject(secTask.project,['Inbox', '@Context']) != true) return false;
     }
     if((this.notion == false)&&(isProject(this.project,['Inbox', '@Context']))){
-      if (secTask.project == null) return true;
-      else return false;
+      if (secTask.project != null) return false;
     }
+    if((this.date == null)&&(secTask.date == null)) return true;
+    if((this.date != null)){ if(this.date_start == secTask.date_start) return true;}
     return false;
   }
 
